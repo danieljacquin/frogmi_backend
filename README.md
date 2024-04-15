@@ -1,24 +1,30 @@
-# README
+### Prerequisites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Make sure you have [Ruby on Rails](https://rubyonrails.org/) installed on your machine. If you haven't installed Ruby on Rails yet, you can follow the installation instructions provided on the [official website](https://rubyonrails.org/).
 
-Things you may want to cover:
+### Installation
 
-* Ruby version
+1. Clone this repository to your local machine using `git clone`.
+2. Navigate into the project directory.
+3. Run `bundle install` to install all the necessary dependencies.
+4. Create .env file in root directory and copy and paste this variable and put the values as you need.
 
-* System dependencies
+```bas
+POSTGRES_USERNAME=postgres
+POSTGRES_PASSWORD=123456
+DATABASE_NAME=frogmi
+HOST=localhost
+```
 
-* Configuration
+### Database Setup
 
-* Database creation
+1. Make sure you have PostgreSQL installed on your machine. If not, you can download and install it from [here](https://www.postgresql.org/).
+2. Create the database by running `rails db:create`.
+3. Migrate the database schema by running `rails db:migrate`.
 
-* Database initialization
+### Running the Application
 
-* How to run the test suite
+Once you have installed all the dependencies and set up the database, you can run the application by following these steps:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. In the project directory, run `rails server`.
+2. Open [http://localhost:4000](http://localhost:4000) in your browser to view the application.
